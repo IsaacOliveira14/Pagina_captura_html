@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header */
+header{
+    background-color: rgb(2, 158, 2);
+    text-align: center;
+    padding: 10px;
+}
+.title{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 4px rgb(21, 58, 12);
+}
+/* Main */
+
+main{
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.form-container{
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.7);
+    float: right;
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-container h2{
+    font-size: 18px;
+}
+
+/* Class de espaçamento */
+.mb{margin-bottom: 15px;}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+/* button for submit */
+input[type="submit"]{
+    color: white;
+    background: linear-gradient(to bottom, rgb(0, 66, 0), green);
+    font-weight: bold;
+}
+
+select{
+    appearance: none;
+    background-image: url('../images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+/* Footer */
+
+footer{
+    background: rgb(58, 58, 58);
+    padding: 20px;
+    text-align: center;
+}
+.picture{
+    width: 160px;
+}
+.image{
+    width: 160px;
+    height: 228px;
+    background: url('../images/face.jpg');
+    display: inline-block;
+    background-size: cover;
+    border-radius: 8px;
+    outline: 4px solid green;
+    box-sizing: border-box;
+}
+.description{
+    max-width: 40%;
+    color: white;
+    display: inline-block;
+    text-align: left;
+    margin-left: 40px;
+}
+.description h3 {
+    font-size: 30px;
+}
+.description h3, p{
+    margin-bottom: 20px;
+}
+
+/* Medias querys */
+@media screen and (max-width: 550px){
+
+    .title{
+        font-size: 25px;
+    }
+    .form-container{
+        float:none;
+        margin: auto;
+        max-width: 80%;
+        text-align: center;
+    }
+    .image{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .description{
+        max-width: 70%;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    
+}
