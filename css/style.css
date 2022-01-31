@@ -65,6 +65,14 @@ input[type="submit"]{
     font-weight: bold;
 }
 
+input[type="submit"]:hover{
+    background: linear-gradient(to bottom, green, rgb(0, 226, 0));
+
+}
+input[type="submit"]:active{
+    outline: 2px solid blue; 
+}
+
 select{
     appearance: none;
     background-image: url('../images/arrow.jpg');
