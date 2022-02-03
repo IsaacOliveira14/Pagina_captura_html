@@ -90,7 +90,6 @@ footer{
 }
 .image{
     width: 160px;
-    height: 228px;
     background: url('../images/face.jpg');
     display: inline-block;
     background-size: cover;
